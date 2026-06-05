@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Functions
-
 double add(double a, double b)
 {
     return a + b;
