@@ -1,162 +1,33 @@
- 
+# C++ Calculator
 
-#include <iostream>
-using namespace std;
+A menu-driven calculator built using C++.
 
-// Functions
+## Features
 
-double add(double a, double b)
-{
-    return a + b;
-}
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Modulus
+- Square
 
-double subtractNumbers(double a, double b)
-{
-    return a - b;
-}
+## Concepts Used
 
-double multiplyNumbers(double a, double b)
-{
-    return a * b;
-}
+- Functions
+- While Loops
+- Switch Case
+- Conditional Statements
+- User Input/Output
 
-double divideNumbers(double a, double b)
-{
-    return a / b;
-}
+## How to Run
 
-int modulusNumbers(int a, int b)
-{
-    return a % b;
-}
+1. Compile the program
+2. Run the executable
+3. Choose an operation from the menu
 
-double squareNumber(double a)
-{
-    return a * a;
-}
+## Author
 
-int main()
-{
-    int choice;
+Sarthak Manthale
 
-    while(true)
-    {
-        cout << "\n===== CALCULATOR =====\n";
-        cout << "1. Add\n";
-        cout << "2. Subtract\n";
-        cout << "3. Multiply\n";
-        cout << "4. Divide\n";
-        cout << "5. Exit\n";
-        cout << "6. Modulus\n";
-        cout << "7. Square\n";
 
-        cout << "\nEnter Choice: ";
-        cin >> choice;
-
-        if(choice == 5)
-        {
-            cout << "Thank you for using Calculator!\n";
-            return 0;
-        }
-
-        switch(choice)
-        {
-            case 1:
-            {
-                double a, b;
-                cout << "Enter first number: ";
-                cin >> a;
-                cout << "Enter second number: ";
-                cin >> b;
-
-                cout << "Result = " << add(a, b) << endl;
-                break;
-            }
-
-            case 2:
-            {
-                double a, b;
-                cout << "Enter first number: ";
-                cin >> a;
-                cout << "Enter second number: ";
-                cin >> b;
-
-                cout << "Result = " << subtractNumbers(a, b) << endl;
-                break;
-            }
-
-            case 3:
-            {
-                double a, b;
-                cout << "Enter first number: ";
-                cin >> a;
-                cout << "Enter second number: ";
-                cin >> b;
-
-                cout << "Result = " << multiplyNumbers(a, b) << endl;
-                break;
-            }
-
-            case 4:
-            {
-                double a, b;
-
-                cout << "Enter first number: ";
-                cin >> a;
-
-                cout << "Enter second number: ";
-                cin >> b;
-
-                if(b == 0)
-                {
-                    cout << "Cannot divide by zero!\n";
-                }
-                else
-                {
-                    cout << "Result = " << divideNumbers(a, b) << endl;
-                }
-                break;
-            }
-
-            case 6:
-            {
-                int a, b;
-
-                cout << "Enter first integer: ";
-                cin >> a;
-
-                cout << "Enter second integer: ";
-                cin >> b;
-
-                if(b == 0)
-                {
-                    cout << "Cannot perform modulus by zero!\n";
-                }
-                else
-                {
-                    cout << "Result = " << modulusNumbers(a, b) << endl;
-                }
-
-                break;
-            }
-
-            case 7:
-            {
-                double a;
-
-                cout << "Enter a number: ";
-                cin >> a;
-
-                cout << "Result = " << squareNumber(a) << endl;
-                break;
-            }
-
-            default:
-            {
-                cout << "Invalid Choice!\n";
-            }
-        }
-    }
-
-    return 0;
-}
+    
