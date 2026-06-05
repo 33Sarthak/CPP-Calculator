@@ -1,30 +1,4 @@
-# CPP-Calculator
-Menu-driven calculator built using C++ with functions, loops, and switch-case.
-# C++ Calculator
-
-A simple menu-driven calculator built using C++.
-
-## Features
-
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Modulus
-- Square
-- Error handling for division by zero
-
-## Concepts Used
-
-- Functions
-- Loops
-- Switch Case
-- Conditional Statements
-- User Input
-
-## Author
-
-Sarthak Manthale
+ 
 
 #include <iostream>
 using namespace std;
